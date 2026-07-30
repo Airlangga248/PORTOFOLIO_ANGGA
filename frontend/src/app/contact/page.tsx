@@ -105,14 +105,14 @@ export default function ContactPage() {
                 {
                   icon: "📧",
                   title: "Email",
-                  value: "alif@example.com",
+                  value: "airlanggaasultan@gmail.com",
                   description:
                     "Kirim email kapan saja, saya akan membalasnya secepatnya.",
                 },
                 {
                   icon: "📱",
                   title: "Telepon",
-                  value: "+62 812-xxxx-xxxx",
+                  value: "+62 851-5696-7580",
                   description: "Tersedia di jam sekolah (08.00 - 15.00 WIB).",
                 },
                 {
@@ -148,13 +148,19 @@ export default function ContactPage() {
             <div className="p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50">
               <h3 className="text-white font-semibold mb-4">Social Media</h3>
               <div className="flex gap-3">
-                {["GitHub", "LinkedIn", "Instagram"].map((social) => (
+                {[
+                  { name: "GitHub", href: "https://github.com/Airlangga248" },
+                  { name: "LinkedIn", href: "https://www.linkedin.com/in/angga-airlangga-19a36b373/" },
+                  { name: "Instagram", href: "http://instagram.com/aaaanggaaaaaa/" },
+                ].map((social) => (
                   <a
-                    key={social}
-                    href="#"
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-4 py-2 rounded-xl bg-gray-800/50 border border-gray-700/50 text-gray-400 text-sm hover:text-white hover:border-indigo-500/30 transition-all duration-300"
                   >
-                    {social}
+                    {social.name}
                   </a>
                 ))}
               </div>

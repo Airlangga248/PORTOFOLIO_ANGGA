@@ -20,15 +20,19 @@ export default function AboutPage() {
           {/* Ini photo dan info */}
           <div className="flex flex-col items-center lg:items-start gap-6">
             <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-gray-800/50 flex items-center justify-center">
-              <span className="text-6xl">👤</span>
+              <img
+                src="/foto.jpg"
+                alt="Foto saya"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             <div className="w-full space-y-3">
               {[
-                { label: "Nama", value: "Muh Alif Anhar" },
+                { label: "Nama", value: "Muh Airlangga" },
                 { label: "Kelas", value: "XII RPL 1" },
-                { label: "Sekolah", value: "SMK ..." },
-                { label: "Lokasi", value: "Indonesia" },
+                { label: "Sekolah", value: "SMK Telkom Makassar" },
+                { label: "Lokasi", value: "Makassar, Indonesia" },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -100,7 +104,7 @@ export default function AboutPage() {
                   2024 — Sekarang
                 </span>
                 <h3 className="text-white font-semibold mt-1">
-                  SMK ... — XII RPL 1
+                  SMK Telkom Makassar — XII RPL 1
                 </h3>
                 <p className="text-gray-400 text-sm mt-1">
                   Mempelajari pemrograman web, mobile, dan desktop. Fokus
@@ -116,7 +120,7 @@ export default function AboutPage() {
                 <span className="text-xs text-gray-500 font-medium">
                   2021 — 2024
                 </span>
-                <h3 className="text-white font-semibold mt-1">SMP ...</h3>
+                <h3 className="text-white font-semibold mt-1">SMP Islam Terpadu Mutiara</h3>
                 <p className="text-gray-400 text-sm mt-1">
                   Masa SMP dimana mulai tertarik dengan dunia teknologi dan
                   komputer.

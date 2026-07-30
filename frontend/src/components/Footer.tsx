@@ -8,9 +8,9 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { href: "#", label: "GitHub" },
-  { href: "#", label: "LinkedIn" },
-  { href: "#", label: "Instagram" },
+  { href: "https://github.com/Airlangga248", label: "GitHub" },
+  { href: "https://www.linkedin.com/in/angga-airlangga-19a36b373/", label: "LinkedIn" },
+  { href: "https://www.instagram.com/aaaanggaaaaaa/", label: "Instagram" },
 ];
 
 export default function Footer() {
