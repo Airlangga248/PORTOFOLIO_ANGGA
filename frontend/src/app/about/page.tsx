@@ -19,17 +19,17 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Ini photo dan info */}
           <div className="flex flex-col items-center lg:items-start gap-6">
-            <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-gray-800/50 flex items-center justify-center">
+            <div className="w-48 h-48 rounded-2xl overflow-hidden bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-gray-800/50 flex items-center justify-center">
               <img
                 src="/foto.jpg"
                 alt="Foto saya"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-2xl"
               />
             </div>
 
             <div className="w-full space-y-3">
               {[
-                { label: "Nama", value: "Muh Airlangga" },
+                { label: "Nama", value: "Muh Airlangga Fairouz Sultan" },
                 { label: "Kelas", value: "XII RPL 1" },
                 { label: "Sekolah", value: "SMK Telkom Makassar" },
                 { label: "Lokasi", value: "Makassar, Indonesia" },

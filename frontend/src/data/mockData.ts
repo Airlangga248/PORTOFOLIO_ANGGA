@@ -27,6 +27,7 @@ export interface Certificate {
   date: string;
   credentialId: string;
   verificationUrl: string;
+  image?: string;
 }
 
 export interface Testimonial {
@@ -109,31 +110,31 @@ const skillGroups: SkillGroup[] = [
     title: "Frontend Development",
     icon: "🌐",
     skills: [
-      { name: "HTML5 / CSS3", level: "Advanced", percentage: 90 },
-      { name: "JavaScript (ES6+)", level: "Advanced", percentage: 85 },
-      { name: "React.js", level: "Intermediate", percentage: 75 },
-      { name: "Next.js (App Router)", level: "Intermediate", percentage: 70 },
-      { name: "Tailwind CSS", level: "Advanced", percentage: 90 },
+      { name: "HTML5 / CSS3", level: "Intermediate", percentage: 55 },
+      { name: "JavaScript (ES6+)", level: "Intermediate", percentage: 60 },
+      { name: "React.js", level: "Intermediate", percentage: 52 },
+      { name: "Next.js (App Router)", level: "Intermediate", percentage: 55 },
+      { name: "Tailwind CSS", level: "Basic", percentage: 40 },
     ],
   },
   {
     title: "Backend & Database",
     icon: "⚙️",
     skills: [
-      { name: "Node.js", level: "Intermediate", percentage: 70 },
-      { name: "Express.js", level: "Intermediate", percentage: 75 },
-      { name: "MySQL", level: "Intermediate", percentage: 80 },
-      { name: "RESTful API Development", level: "Intermediate", percentage: 80 },
+      { name: "Node.js", level: "Intermediate", percentage: 55 },
+      { name: "Express.js", level: "Intermediate", percentage: 62 },
+      { name: "MySQL", level: "Intermediate", percentage: 60 },
+      { name: "RESTful API Development", level: "Intermediate", percentage: 55 },
     ],
   },
   {
     title: "Tools & Platforms",
     icon: "🛠️",
     skills: [
-      { name: "Git & GitHub", level: "Advanced", percentage: 85 },
-      { name: "Figma (UI/UX)", level: "Intermediate", percentage: 70 },
-      { name: "Postman", level: "Advanced", percentage: 80 },
-      { name: "VS Code", level: "Advanced", percentage: 95 },
+      { name: "Git & GitHub", level: "Intermediate", percentage: 58 },
+      { name: "Figma (UI/UX)", level: "Intermediate", percentage: 62 },
+      { name: "Postman", level: "Intermediate", percentage: 60 },
+      { name: "VS Code", level: "Advanced", percentage: 85 },
     ],
   },
 ];
@@ -142,27 +143,30 @@ const skillGroups: SkillGroup[] = [
 const certificates: Certificate[] = [
   {
     id: 1,
-    title: "Javascript Essential 1",
+    title: "Javascript Essential ",
     issuer: "Cisco Networking",
     date: "11 Juni 2026",
-    credentialId: "Cert ID: 41d070b4-481f-4152-bcb0-7a4f03df29a0",
+    credentialId: "41d070b4-481f-4152-bcb0-7a4f03df29a0",
     verificationUrl: "https://www.credly.com/badges/287dd2ac-3286-4938-8bbc-d58c2980810e/public_url",
+    image: "/javascript.png",
   },
   {
     id: 2,
-    title: "Javascript Essential 2",
-    issuer: "Cisco Networking",
-    date: "11 Juni 2026",
-    credentialId: "Cert ID: 41d070b4-481f-4152-bcb0-7a4f03df29a0",
-    verificationUrl: "https://www.credly.com/badges/287dd2ac-3286-4938-8bbc-d58c2980810e/public_url",
+    title: "AI Class ASEAN",
+    issuer: "ASEAN FOUNDATION",
+    date: "22 Juli 2026",
+    credentialId: "-",
+    verificationUrl: "https://drive.google.com/drive/folders/1dE4Ny9QmvYb5uNujeFa0AuDxrHEhO59J",
+    image: "/AI ASEAN.png",
   },
   {
     id: 3,
-    title: "Javascript Essential 3",
-    issuer: "Cisco Networking",
-    date: "11 Juni 2026",
-    credentialId: "Cert ID: 41d070b4-481f-4152-bcb0-7a4f03df29a0",
-    verificationUrl: "https://www.credly.com/badges/287dd2ac-3286-4938-8bbc-d58c2980810e/public_url",
+    title: "Olimpiade Matematika",
+    issuer: "Puskanas",
+    date: "02 Juni 2026",
+    credentialId: "-",
+    verificationUrl: "https://drive.google.com/drive/folders/1rZL5boboT08KXg5484W8F-5eMd8OWxvq?hl=ID",
+    image: "/Puskanas.png",
   },
 ];
 

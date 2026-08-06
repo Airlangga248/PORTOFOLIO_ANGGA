@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image"; 
 import { getCertificates, Certificate } from "@/data/mockData";
 import SkeletonCard from "@/components/SkeletonCard";
 
@@ -35,7 +36,7 @@ export default function CertificatePage() {
             </span>
           </h1>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Sertifikasi keahlian dan pencapaian akademik yang saya raih selama menempuh pendidikan di bidang Informatika.
+            Sertifikasi keahlian dan pencapaian akademik yang saya raih selama menempuh pendidikan di bidang Informatika dan Pelajaran Umum Lainnya.
           </p>
         </div>
 
@@ -49,12 +50,24 @@ export default function CertificatePage() {
             certificatesList.map((cert) => (
               <div
                 key={cert.id}
-                className="group p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-indigo-500/30 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                className="group p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-indigo-500/30 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:bg-indigo-500/20 transition-colors duration-300">
-                    <span className="text-2xl">📜</span>
-                  </div>
+                  {/* Tampilkan Foto jika ada, jika tidak tampilkan Emoji Icon */}
+                  {cert.image ? (
+                    <div className="relative w-full h-48 mb-6 rounded-xl overflow-hidden bg-gray-800 border border-gray-700/50">
+                      <Image
+                        src={cert.image}
+                        alt={cert.title}
+                        fill
+                        className="object-cover object-top group-hover:scale-105 transition-transform duration-300" 
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:bg-indigo-500/20 transition-colors duration-300">
+                      <span className="text-2xl">📜</span>
+                    </div>
+                  )}
 
                   <h3 className="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors duration-300 leading-snug">
                     {cert.title}

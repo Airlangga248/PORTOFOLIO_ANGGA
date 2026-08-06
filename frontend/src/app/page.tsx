@@ -20,7 +20,7 @@ export default function Home() {
 
           {/* Ini headingnya */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
-            <span className="text-white">Halo, saya Airlangga</span>{" "}
+            <span className="text-white">Halo, Saya Muh Airlangga Fairouz Sultan</span>{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">
             </span>
           </h1>
